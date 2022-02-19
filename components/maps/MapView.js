@@ -1,11 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { GoogleMap, Polygon, Marker } from "@react-google-maps/api";
 import styles from "./MapView.module.css";
-import {
-  initializePolygonsMultiple,
-  createCoordinates,
-  sampleCoordinates2,
-} from "./testCoordinates";
+import { initializePolygonsMultiple, createCoordinates, sampleCoordinates2 } from "./testCoordinates";
 
 const MapView = ({ mapprofile, polygonData }) => {
   // console.log("Render MapView. polygonData: ");
@@ -58,13 +54,7 @@ const MapView = ({ mapprofile, polygonData }) => {
 
   return (
     <div className={styles.dashboardContainer}>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={defaultCoordinates}
-        yesIWantToUseGoogleMapApiInternals
-        zoom={10}
-        onLoad={handleLoad}
-      >
+      <GoogleMap mapContainerStyle={containerStyle} center={defaultCoordinates} yesIWantToUseGoogleMapApiInternals zoom={10} onLoad={handleLoad}>
         {/* {polygonData.map((polygon, i) => (
           <Polygon
             key={i}
@@ -97,12 +87,8 @@ const MapView = ({ mapprofile, polygonData }) => {
                 return (
                   <Polygon
                     key={i2}
-                    onMouseOver={() =>
-                      handleMouseOver(polygon.polygonOptions, polygon.setPolygonOptions)
-                    }
-                    onMouseOut={() =>
-                      handleMouseOut(polygon.polygonOptions, polygon.setPolygonOptions)
-                    }
+                    onMouseOver={() => handleMouseOver(polygon.polygonOptions, polygon.setPolygonOptions)}
+                    onMouseOut={() => handleMouseOut(polygon.polygonOptions, polygon.setPolygonOptions)}
                     path={polysubgeo}
                     options={polygon.polygonOptions}
                     onClick={() => {
@@ -115,7 +101,7 @@ const MapView = ({ mapprofile, polygonData }) => {
           );
         })}
 
-        <Polygon
+        {/* <Polygon
           key={0}
           path={sampleCoordinatesTest}
           options={{
@@ -128,7 +114,7 @@ const MapView = ({ mapprofile, polygonData }) => {
             geodesic: false,
             zIndex: 1,
           }}
-        />
+        /> */}
       </GoogleMap>
       <div className={styles.infoSection}>Zipcode: {displayZipcode}</div>
     </div>

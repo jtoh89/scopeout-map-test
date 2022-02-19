@@ -1,0 +1,59 @@
+.searchForm {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locationSearchInput {
+  height: 50px;
+  width: 500px;
+  padding: 5px;
+}
+
+.searchButton {
+  max-height: 50px;
+  margin-left: 3px;
+  width: 200px;
+  border-radius: 2px;
+  border: none !important;
+  background-color: var(--card-chart-color);
+}
+
+.addressError {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 100%;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.addressError p {
+  color: red !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .searchForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .locationSearchInput {
+    height: 50px;
+    width: 80vw;
+    padding: 5px;
+  }
+
+  .searchButton {
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    border-radius: 2px;
+    border: none !important;
+    background-color: var(--card-chart-color);
+  }
+}

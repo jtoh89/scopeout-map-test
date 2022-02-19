@@ -1,0 +1,23 @@
+.marketViewContainer {
+  padding: 15px 30px;
+}
+
+.marketListContainer {
+  padding: 15px 30px;
+}
+
+.marketList {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.marketListLink {
+  /* max-width: 300px; */
+  text-align: center;
+}
+
+.marketListLink:hover {
+  cursor: pointer;
+  color: var(--blue) !important;
+}
+

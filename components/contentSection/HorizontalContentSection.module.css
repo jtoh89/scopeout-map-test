@@ -1,0 +1,33 @@
+.outerContainer {
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.innerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--white) !important;
+  width: var(--page-content-width);
+  min-height: 500px;
+}
+
+.contentTextContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contentImgContainer {
+  position: relative;
+  margin: 1rem;
+  min-height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .innerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--white) !important;
+  }
+}

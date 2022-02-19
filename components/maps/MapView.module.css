@@ -1,0 +1,6 @@
+.infoSection {
+  background-color: white;
+}
+.polygon:hover {
+  cursor: pointer;
+}

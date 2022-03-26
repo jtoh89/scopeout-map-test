@@ -2,8 +2,6 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
-    // const googleMapApi = process.env.GOOGLEMAPAPIKEY;
-
     return (
       <Html>
         <Head>

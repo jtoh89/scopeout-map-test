@@ -1,0 +1,21 @@
+.infoSection {
+  background-color: white;
+}
+.polygon:hover {
+  cursor: pointer;
+}
+
+.mapContainer {
+  height: 700px;
+}
+
+.map {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 600px;
+}
+.info {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}

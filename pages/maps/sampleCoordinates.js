@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-export const initializePolygons = (sampleCoordinatesList) => {
+export const initializePolygons = (coordinatesList) => {
   var polygonArray = new Array();
 
-  sampleCoordinatesList.forEach((polygonObject, i) => {
+  // console.log("sampleCoordinatesList: ", sampleCoordinatesList);
+
+  coordinatesList.forEach((polygonObject, i) => {
     // console.log("generate geometry: ", polygonObject.geometry);
 
     const [polygonOptions, setPolygonOptions] = useState({
@@ -11,7 +13,7 @@ export const initializePolygons = (sampleCoordinatesList) => {
       fillOpacity: 0.5,
       strokeColor: "#FF7700",
       strokeOpacity: 1,
-      strokeWeight: 0,
+      strokeWeight: 1,
       draggable: false,
       geodesic: false,
       zIndex: 1,
